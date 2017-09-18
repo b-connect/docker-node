@@ -7,3 +7,4 @@ RUN rm -rf /var/cache/apk/*
 ADD init.sh /init.sh
 
 ENV WORKING_DIR /var/www
+ENTRYPOINT ["/init.sh"]
